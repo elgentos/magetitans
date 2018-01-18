@@ -1,0 +1,30 @@
+header {
+  background: url('/assets/images/splash/banner.jpg') 50% 0 no-repeat #000;
+  background-size: cover;
+}
+
+.header__title {
+  background: url('/assets/images/logo.svg') 0 0 no-repeat transparent;
+  background-size: contain;
+  margin: 0 auto 35px;
+  text-indent: -9999em;
+  height: 300px;
+  width: 300px;
+}
+
+.header__subtitle {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 25px;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 680px) {
+  .header__subtitle {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

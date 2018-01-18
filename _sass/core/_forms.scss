@@ -1,0 +1,128 @@
+input,
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  background: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c2c2c2;
+  border-radius: 1px;
+  font-family: 'Arial',sans-serif;
+  font-size: 16px;
+  height: 40px;
+  line-height: 1.42857143;
+  padding: 0 9px;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border: 2px solid $color-orange;
+  }
+
+  &:disabled {
+    color: $color-grey-dark;
+  }
+
+}
+
+input[type="submit"] {
+
+}
+
+
+.input-box {
+
+  margin-bottom: 1.8rem;
+
+  & input[type="text"] + label,
+  & input[type="password"] + label {
+    transition: all .2s linear;
+    padding-left: 1rem;
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    display: block;
+
+    & > span {
+      padding-bottom: 0.25rem;
+      top: -3.8rem;
+      position: absolute;
+      color: $color-white;
+      font-size: $font-size-base;
+    }
+  }
+
+  & .input-marker {
+    transition: all .2s linear;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    border-bottom: 1px solid $color-grey-light;
+    width: 100%;
+  }
+
+  & input[type="text"]:focus,
+  & input[type="password"]:focus {
+    margin: 0;
+    border-color: rgba(0, 0, 0, 0);
+
+    & + label {
+      opacity: 1;
+    }
+
+    & + label + .input-marker {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-white;
+    }
+
+  }
+
+}
+
+
+.btn-in-input-field {
+  position: relative;
+  & input {
+  }
+}
+
+/*
+input[type=radio],
+input[type=checkbox]{
+  position: absolute;
+  left: -1000px;
+  top: -1000px;
+
+  & + label {
+    position: relative;
+
+    &:before {
+      font-family: FontAwesome;
+      display: inline-block;
+      content: $fa-var-circle-thin;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &:checked + label:before {
+      content:$fa-var-dot-circle-o;
+  }
+}
+
+input[type=checkbox] + label:before {
+  content: $fa-var-square-o;
+}
+input[type=checkbox]:checked + label:before {
+    content: $fa-var-check-square;
+}
+*/

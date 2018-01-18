@@ -1,0 +1,17 @@
+<link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
+
+<script type="text/javascript" src="/assets/js/jquery-1.12.4.min.js"></script>
+
+<script type="text/javascript" src="/assets/js/scripts.js?{{ site.time  | date: '%s' }}"></script>
+
+{% if page.home %}
+	<script type="text/javascript" src="/assets/js/jquery.cycle2.min.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.cycle2.carousel.min.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.cycle2.swipe.min.js"></script>
+	<script type="text/javascript" src="/assets/js/enquire.min.js"></script>
+	<script type="text/javascript" src="/assets/js/home.js?{{ site.time  | date: '%s' }}"></script>
+{% endif %}
+
+{% if page.portfolio %}
+	<script type="text/javascript" src="/assets/js/isotope.pkgd.min.js"></script>
+{% endif %}

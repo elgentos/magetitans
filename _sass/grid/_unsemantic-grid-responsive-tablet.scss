@@ -1,0 +1,125 @@
+/* ================================================================== */
+/* This file has a mobile-to-tablet, and tablet-to-desktop breakpoint */
+/* ================================================================== */
+
+$media-extra-small-max: 543px !default;
+$media-small-min: 544px !default;
+$media-small-max: 767px !default;
+$media-medium-min: 768px !default;
+$media-medium-max: 991px !default;
+$media-large-min: 992px !default;
+$media-large-max: 1199px !default;
+$media-extra-large-min: 1200px !default;
+
+@mixin default {
+    @content;
+}
+
+@mixin bp-extra-small {
+  @media (max-width: $media-extra-small-max) {
+    @content;
+  }
+}
+
+@mixin bp-small-only {
+  @media (min-width: $media-small-min) and (max-width: $media-small-max) {
+    @content;
+  }
+}
+
+@mixin bp-medium-only {
+  @media (min-width: $media-medium-min) and (max-width: $media-medium-max) {
+    @content;
+  }
+}
+
+@mixin bp-large-only {
+  @media (min-width: $media-large-min) and (max-width: $media-large-max) {
+    @content;
+  }
+}
+
+@mixin bp-small-max {
+  @media (max-width: $media-small-max) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media (min-width: $media-medium-min) {
+    @content;
+  }
+}
+
+@mixin bp-large {
+  @media (min-width: $media-large-min) {
+    @content;
+  }
+}
+
+@mixin bp-extra-large {
+  @media (min-width: $media-extra-large-min) {
+    @content;
+  }
+}
+
+
+@import "unsemantic-vars";
+
+@include unsemantic-grid-placeholders;
+@include unsemantic-grid-base(default, extra-small, small, medium, large, extra-large);
+
+@include default {
+  @include unsemantic-grid-base-grid(default);
+  @include unsemantic-grid-placeholders(default);
+  @include unsemantic-grid-scoped(default);
+}
+
+@include bp-extra-small {
+  @include unsemantic-grid-base-grid(extra-small);
+  @include unsemantic-grid-placeholders(extra-small);
+  @include unsemantic-grid-scoped(extra-small);
+}
+
+@include bp-small-only {
+  @include unsemantic-grid-base-grid(small);
+  @include unsemantic-grid-placeholders(small);
+  @include unsemantic-grid-scoped(small);
+}
+
+@include bp-medium-only {
+  @include unsemantic-grid-base-grid(medium);
+  @include unsemantic-grid-placeholders(medium);
+  @include unsemantic-grid-scoped(medium);
+}
+
+@include bp-large-only {
+  @include unsemantic-grid-base-grid(large);
+  @include unsemantic-grid-placeholders(large);
+  @include unsemantic-grid-scoped(large);
+}
+
+@include bp-extra-large {
+  @include unsemantic-grid-base-grid(extra-large);
+  @include unsemantic-grid-placeholders(extra-large);
+  @include unsemantic-grid-scoped(extra-large);
+}
+
+@include bp-medium {
+  .hide-on-medium-and-up {
+    display: none;
+  }
+}
+
+@include bp-small-max {
+  .hide-on-small-and-down {
+    display: none;
+  }
+}
+
+@include bp-small-max {
+  .grid-100 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
