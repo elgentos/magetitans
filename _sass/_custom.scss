@@ -1,0 +1,73 @@
+body {
+  padding-top: $navbar-height;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar-fixed-top {
+  border-bottom: 0;
+}
+
+.navbar-default {
+  .navbar-nav {
+    & > li {
+      & > a {
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 0.157857142857143em;
+      }
+    }
+  }
+}
+
+.navbar-right {
+  padding: 2.8579em 0;
+}
+
+.page-footer {
+  background: $navbar-default-bg;
+  color: #ffffff;
+  margin-top: $navbar-margin-bottom;
+
+  .nav-footer {
+    li {
+      line-height: 1.428571428571429em;
+      padding: 0.428571428571429em 0;
+
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .newsletter-form div[class*=bg-] {
+    color: $text-color;
+    padding: $padding-base-vertical $padding-base-horizontal;
+  }
+}
+
+.row [class^=col-] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+// Home Page
+.home-banner {
+  background: url(http://16287-presscdn-0-58.pagely.netdna-cdn.com/wp-content/uploads/cover-2018.jpg) 100% 50% no-repeat;
+  min-height: 600px;
+  background-size: cover;
+  padding: 60px 0;
+
+  .home-intro {
+    background: rgba(0,0,0,0.6);
+    color: #ffffff;
+    padding: 30px;
+  }
+}
+
+.background-dark {
+  background: #000000;
+  color: #ffffff;
+}
