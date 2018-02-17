@@ -11,12 +11,16 @@ img {
 }
 
 .navbar-default {
+  font-size: 14px;
+
   .navbar-nav {
     & > li {
       & > a {
         text-transform: uppercase;
         font-weight: 500;
         letter-spacing: 0.157857142857143em;
+        font-family: $font-family-navbar;
+        line-height: 1.42857;
       }
     }
   }
@@ -70,4 +74,21 @@ img {
 .background-dark {
   background: #000000;
   color: #ffffff;
+}
+
+// Pages
+.page-title {
+  height: 200px;
+  background: url(https://23276-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2014/07/thank-you-page-BW.jpg) top center fixed;
+  background-size: 120%;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    margin: 0;
+  }
 }
