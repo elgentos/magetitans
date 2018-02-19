@@ -24,6 +24,21 @@ img {
       }
     }
   }
+
+  .navbar-brand {
+    span {
+      float: right;
+      margin-left: 10px;
+      line-height: 1.4;
+      padding: 1.8em 0;
+      font-family: $font-family-navbar;
+    }
+  }
+}
+
+.nav > li > a {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .navbar-right {
@@ -59,7 +74,7 @@ img {
 
 // Home Page
 .home-banner {
-  background: url(http://16287-presscdn-0-58.pagely.netdna-cdn.com/wp-content/uploads/cover-2018.jpg) 100% 50% no-repeat;
+  background: url(/assets/images/homepage-header.jpg) 100% 50% no-repeat;
   min-height: 600px;
   background-size: cover;
   padding: 60px 0;
@@ -79,8 +94,8 @@ img {
 // Pages
 .page-title {
   height: 200px;
-  background: url(https://23276-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2014/07/thank-you-page-BW.jpg) top center fixed;
-  background-size: 120%;
+  background: url(/assets/images/page-header.jpg) 50% 50% fixed no-repeat;
+  background-size: cover;
   position: relative;
 
   h1 {
