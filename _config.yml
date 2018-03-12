@@ -14,15 +14,25 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: MageTitans GRQ
-email: MageTitansGRQ@Magetitans.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+email: groningen@magetitans.com
 twitter_username: magetitansnl
-github_username:  jekyll
+
+data:
+  navigation:
+    - title: Home
+      url: /
+    - title: Tickets
+      url: /tickets
+    - title: Speakers
+      url: /speakers
+    - title: Sponsors
+      url: /sponsors
+    - title: Agenda
+      url: /agenda
+
+sass:
+  sass_dir: _sass
+  style: :compressed
 
 # Build settings
 markdown: kramdown
