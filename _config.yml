@@ -16,6 +16,7 @@
 title: MageTitans GRQ
 email: groningen@magetitans.com
 twitter_username: magetitansnl
+site.baseurl: /
 
 data:
   navigation:
