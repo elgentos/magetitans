@@ -24,6 +24,8 @@ data:
       url: /
     - title: Tickets
       url: /tickets
+    - title: Call for Papers
+      url: /call-for-papers
     - title: Speakers
       url: /speakers
     - title: Sponsors
