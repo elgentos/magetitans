@@ -15,13 +15,54 @@ permalink: /speakers/
     <div class="row">
         <div class="col-md-12">
             <h2>Speakers</h2>
-            <p>
-                We haven't announced any speakers for this event yet. But stay tuned, we'll make sure they'll be added to
-                this page.
-            </p>
+        </div>
+    </div>
+
+    <div class="row">
+
+        {% for speaker in site.speakers %}
+            <div class="col-md-4">
+
+                <div class="speaker">
+
+                    <div class="speaker__img-name">
+                        <div class="speaker__avatar">
+                            <a href="{{ speaker.url }}" title="{{ speaker.name }}">
+                                <img src="/assets/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" />
+                            </a>
+                        </div>
+                        <div class="speaker__name">
+                            <h2>
+                                {{ speaker.name }}
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="speaker__meta">
+
+                        <h2>
+                            {{ speaker.title }}
+                        </h2>
+
+                        <div class="socials">
+                            <ul>
+                                <li>twitter: <a href="https://www.twitter.com/{{ speaker.twitter }}" title="{{ speaker.name }} on Twitter" target="_blank">{{ speaker.twitter }}</a></li>
+                                <li>website: <a href="{{ speaker.url }}" title="{{ speaker.name }} on the web" target="_blank">{{ speaker.website }}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </div>
+
             <p>
                 If you want to speak at MageTitans Groningen yourself, please <a href="https://www.papercall.io/cfps/1061/submissions/new" target="_blank">fill in our call for papers</a>.
             </p>
         </div>
     </div>
 </div>
+
+

@@ -1,0 +1,18 @@
+---
+layout:  speaker
+title:  Stop flushing the fing cache
+name:  John Hughes
+date:  2017-05-30 10:13:37 +0100
+permalink: /speakers/john-hughes/
+img: john-hughes.jpg
+twitter: JohnHughes1984
+website: www.fisheye-webdesign.co.uk
+---
+
+## anthony on Magento2
+
+dbljkdhfglkjdfhgldkjfhlkjdfh
+
+### Download slides
+
+Download the slides here

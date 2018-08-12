@@ -46,3 +46,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
+collections:
+  speakers:
+    output: true
