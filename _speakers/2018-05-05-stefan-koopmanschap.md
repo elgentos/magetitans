@@ -1,18 +1,18 @@
 ---
 layout:  speaker
-title:  Weet niet meer welke
+title:  Don't Stop Learning
 name:  Stefan Koopmanschap
-date:  2017-05-30 10:13:37 +0100
 permalink: /speakers/stefan-koopmanschap/
-img: stefan-koopmanschap.jpg
+img: skoop.jpg
 twitter: skoopnl
 website: http://weblog.stefankoopmanschap.nl/
 ---
 
-## anthony on Magento2
+## Don't Stop Learning
+The world of technology evolves constantly. Every day we as developers do not learn something new, we fall behind. We should never stop learning. There are so many reasons for learning and ways of learning, Let’s find out which.
 
-dbljkdhfglkjdfhgldkjfhlkjdfh
+## stefan Koopmanschap
+Between having a family life, doing a weekly radio show and attending conferences and usergroup meetings, Stefan tries running a company called Ingewikkeld and organizing WeCamp. Having worked with PHP and several of its open source products since the late 90s, he still likes it for getting the job done.
 
-### Download slides
-
-Download the slides here
+- twitter: [{{ page.twitter }}](https://twitter.com/{{ page.twitter }})
+- website: [weblog.stefankoopmanschap.nl](http://weblog.stefankoopmanschap.nl/)
