@@ -20,48 +20,47 @@ permalink: /speakers/
 
     <div class="row">
 
-        {% for speaker in site.speakers %}
-            <div class="col-md-4">
+      {% for speaker in site.speakers %}
+          <div class="col-md-4">
 
-                <div class="speaker">
+              <div class="speaker">
 
-                    <div class="speaker__img-name">
-                        {% if speaker.img %}
-                        <div class="speaker__avatar">
+                  <div class="speaker__img-name">
+                      {% if speaker.img %}
+                      <div class="speaker__avatar">
+                          <a href="{{ speaker.url }}" title="{{ speaker.name }}">
+                              <img src="/assets/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" />
+                          </a>
+                      </div>
+                      {% endif %}
+                      <div class="speaker__name">
+                          <h2>
                             <a href="{{ speaker.url }}" title="{{ speaker.name }}">
-                                <img src="/assets/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" />
+                              {{ speaker.name }}
                             </a>
-                        </div>
-                        {% endif %}
-                        <div class="speaker__name">
-                            <h2>
-                                {{ speaker.name }}
-                            </h2>
-                        </div>
-                    </div>
+                          </h2>
+                      </div>
+                  </div>
 
-                    <div class="speaker__meta">
+                  <div class="speaker__meta">
 
-                        <h2>
-                            {{ speaker.title }}
-                        </h2>
+                      <h2>
+                          {{ speaker.title }}
+                      </h2>
 
-                        <div class="socials">
-                            <ul>
-                                {% if speaker.twitter }
-                                <li>twitter: <a href="https://www.twitter.com/{{ speaker.twitter }}" title="{{ speaker.name }} on Twitter" rel="noreferrer nofollow noopener" target="_blank">@{{ speaker.twitter }}</a></li>
-                                {% endif %}
-                                {% if speaker.website }
-                                <li>website: <a href="{{ speaker.website }}" title="{{ speaker.name }} on the web" rel="noreferrer nofollow noopener" target="_blank">{{ speaker.website | replace:'https:','' | replace:'http:','' | replace:'/','' }}</a></li>
-                                {% endif %}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        {% endfor %}
-    </div>
-        </div>
-    </div>
+                      <div class="socials">
+                          <ul>
+                              {% if speaker.twitter %}
+                              <li>twitter: <a href="https://www.twitter.com/{{ speaker.twitter }}" title="{{ speaker.name }} on Twitter" rel="noreferrer nofollow noopener" target="_blank">@{{ speaker.twitter }}</a></li>
+                              {% endif %}
+                              {% if speaker.website %}
+                              <li>website: <a href="{{ speaker.website }}" title="{{ speaker.name }} on the web" rel="noreferrer nofollow noopener" target="_blank">{{ speaker.website | replace:'https:','' | replace:'http:','' | replace:'/','' }}</a></li>
+                              {% endif %}
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      {% endfor %}
+  </div>
 </div>
