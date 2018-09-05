@@ -26,11 +26,13 @@ permalink: /speakers/
                 <div class="speaker">
 
                     <div class="speaker__img-name">
+                        {% if speaker.img %}
                         <div class="speaker__avatar">
                             <a href="{{ speaker.url }}" title="{{ speaker.name }}">
                                 <img src="/assets/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" />
                             </a>
                         </div>
+                        {% endif %}
                         <div class="speaker__name">
                             <h2>
                                 {{ speaker.name }}
@@ -46,8 +48,12 @@ permalink: /speakers/
 
                         <div class="socials">
                             <ul>
-                                <li>twitter: <a href="https://www.twitter.com/{{ speaker.twitter }}" title="{{ speaker.name }} on Twitter" target="_blank">{{ speaker.twitter }}</a></li>
-                                <li>website: <a href="{{ speaker.url }}" title="{{ speaker.name }} on the web" target="_blank">{{ speaker.website }}</a></li>
+                                {% if speaker.twitter }
+                                <li>twitter: <a href="https://www.twitter.com/{{ speaker.twitter }}" title="{{ speaker.name }} on Twitter" rel="noreferrer nofollow noopener" target="_blank">@{{ speaker.twitter }}</a></li>
+                                {% endif %}
+                                {% if speaker.website }
+                                <li>website: <a href="{{ speaker.website }}" title="{{ speaker.name }} on the web" rel="noreferrer nofollow noopener" target="_blank">{{ speaker.website | replace:'https:','' | replace:'http:','' | replace:'/','' }}</a></li>
+                                {% endif %}
                             </ul>
                         </div>
                     </div>
@@ -55,14 +61,7 @@ permalink: /speakers/
             </div>
 
         {% endfor %}
-
     </div>
-
-            <p>
-                If you want to speak at MageTitans Groningen yourself, please <a href="https://www.papercall.io/cfps/1061/submissions/new" target="_blank">fill in our call for papers</a>.
-            </p>
         </div>
     </div>
 </div>
-
-
