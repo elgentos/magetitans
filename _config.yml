@@ -31,6 +31,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - README.md
+  - CNAME
 
 collections:
   speakers:
