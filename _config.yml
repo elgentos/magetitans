@@ -28,6 +28,8 @@ data:
       url: /call-for-papers
     - title: Speakers
       url: /speakers
+    - title: Venue
+      url: /venue
     - title: Sponsors
       url: /sponsors
     - title: Agenda
