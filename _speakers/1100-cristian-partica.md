@@ -3,7 +3,7 @@ layout:  speaker
 title:  "GraphQL: Mind your Ps and QLs"
 name: Cristian Partica
 permalink: /speakers/cristian-partica/
-img: magento_chris.jpg
+img: cris.png
 twitter: magento_chris
 website: https://www.magento.com/
 ---
