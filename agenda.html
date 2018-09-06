@@ -7,19 +7,56 @@ permalink: /agenda/
 <div class="container-fluid">
     <div class="row">
         <div class="page-title">
-            <h1 class="text-center">Agenda</h1>
+            <h1 class="text-center">Agenda - October 6 2018</h1>
         </div>
     </div>
 </div>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Stay Tuned!</h2>
-            <p>
-                At the moment we're working on an awesome Magento event in
-                Groningen. As soon as we have more information we'll post it
-                here.
-            </p>
+            <h2>October 6th 2018 @ <a href="/venue">Venue - EM2 "The Barn"</a></h2>
+            <table class="table table-striped">
+                <colgroup>
+                  <col class="row-1" />
+                  <col class="row-1" />
+                  <col class="row-6" />
+                  <col class="row-4" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Title</th>
+                    <th>Speaker</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for item in site.data.agenda %}
+                  <tr class="{{ item.type }}">
+                    <td>{{ item.start }}</td>
+                    <td>{{ item.end }}</td>
+                    <td>
+                      {% if item.url %}
+                      <a href="{{ item.url }}">
+                      {% endif %}
+                        {{ item.title }}
+                      {% if item.url %}
+                      </a>
+                      {% endif %}
+                    </td>
+                    <td>
+                      {% if item.url %}
+                      <a href="{{ item.url }}">
+                      {% endif %}
+                      {{ item.speaker }}
+                      {% if item.url %}
+                      </a>
+                      {% endif %}
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

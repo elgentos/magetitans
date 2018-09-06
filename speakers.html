@@ -15,13 +15,54 @@ permalink: /speakers/
     <div class="row">
         <div class="col-md-12">
             <h2>Speakers</h2>
-            <p>
-                We haven't announced any speakers for this event yet. But stay tuned, we'll make sure they'll be added to
-                this page.
-            </p>
-            <p>
-                If you want to speak at MageTitans Groningen yourself, please <a href="https://www.papercall.io/cfps/1061/submissions/new" target="_blank">fill in our call for papers</a>.
-            </p>
         </div>
     </div>
+
+    <div class="row">
+
+      {% for speaker in site.speakers %}
+          <div class="col-md-4">
+
+              <div class="speaker">
+
+                  <div class="speaker__img-name">
+                      {% if speaker.img %}
+                      <div class="speaker__avatar">
+                          <a href="{{ speaker.url }}" title="{{ speaker.name }}">
+                              <img src="/assets/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" />
+                          </a>
+                      </div>
+                      {% endif %}
+                      <div class="speaker__name">
+                          <h2>
+                            <a href="{{ speaker.url }}" title="{{ speaker.name }}">
+                              {{ speaker.name }}
+                            </a>
+                          </h2>
+                      </div>
+                  </div>
+
+                  <div class="speaker__meta">
+
+                      <h2>
+                        <a href="{{ speaker.url }}" title="{{ speaker.title }}">
+                          {{ speaker.title }}
+                        </a>
+                      </h2>
+
+                      <div class="socials">
+                          <ul>
+                              {% if speaker.twitter %}
+                              <li>twitter: <a href="https://www.twitter.com/{{ speaker.twitter }}" title="{{ speaker.name }} on Twitter" rel="noreferrer nofollow noopener" target="_blank">@{{ speaker.twitter }}</a></li>
+                              {% endif %}
+                              {% if speaker.website %}
+                              <li>website: <a href="{{ speaker.website }}" title="{{ speaker.name }} on the web" rel="noreferrer nofollow noopener" target="_blank">{{ speaker.website | replace:'https:','' | replace:'http:','' | replace:'/','' }}</a></li>
+                              {% endif %}
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      {% endfor %}
+  </div>
 </div>

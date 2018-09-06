@@ -18,23 +18,6 @@ email: groningen@magetitans.com
 twitter_username: magetitansnl
 site.baseurl: /
 
-data:
-  navigation:
-    - title: Home
-      url: /
-    - title: Tickets
-      url: /tickets
-    - title: Call for Papers
-      url: /call-for-papers
-    - title: Speakers
-      url: /speakers
-    - title: Venue
-      url: /venue
-    - title: Sponsors
-      url: /sponsors
-    - title: Agenda
-      url: /agenda
-
 sass:
   sass_dir: _sass
   style: :compressed
@@ -48,3 +31,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - README.md
+  - CNAME
+
+collections:
+  speakers:
+    output: true

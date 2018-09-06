@@ -1,0 +1,47 @@
+.speaker {
+
+}
+
+.speaker__avatar {
+
+  margin-right: 1rem;
+
+  & a {
+    display: block;
+    border-radius: 50%;
+    border: 7px solid $brand-primary;
+    max-width: 145px;
+    overflow: hidden;
+  }
+
+}
+
+.speaker__img-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.speaker__meta {
+
+  background-color: #eee;
+  border: 5px solid #e8e7e7;
+  border-radius: 2px;
+
+  padding: 2rem;
+
+  & h2 {
+    margin-top: 0;
+    min-height: 74px;
+  }
+
+  & .socials {
+
+    & ul {
+      list-style: none;
+      padding: 0;
+    }
+
+  }
+
+}
