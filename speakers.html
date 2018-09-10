@@ -19,50 +19,52 @@ permalink: /speakers/
     </div>
 
     <div class="row">
+        <ul class="speakers">
+            {% for speaker in site.speakers %}
+            <li class="speaker">
+                <div class="speaker__img-name">
+                    <a href="{{ speaker.url }}">
+                        {% if speaker.img %}
+                        <div class="speaker__avatar">
+                            <img src="/assets/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}"/>
+                        </div>
+                        {% endif %}
+                        <div class="speaker__name">
+                            <h2>{{ speaker.name }}</h2>
+                        </div>
+                    </a>
+                </div>
 
-      {% for speaker in site.speakers %}
-          <div class="col-md-4">
+                    <div class="speaker__meta">
+                        <span title="{{ speaker.title }}">
+                            <a href="{{ speaker.url }}">{{ speaker.title }}</a>
+                        </span>
 
-              <div class="speaker">
-
-                  <div class="speaker__img-name">
-                      {% if speaker.img %}
-                      <div class="speaker__avatar">
-                          <a href="{{ speaker.url }}" title="{{ speaker.name }}">
-                              <img src="/assets/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" />
-                          </a>
-                      </div>
-                      {% endif %}
-                      <div class="speaker__name">
-                          <h2>
-                            <a href="{{ speaker.url }}" title="{{ speaker.name }}">
-                              {{ speaker.name }}
-                            </a>
-                          </h2>
-                      </div>
-                  </div>
-
-                  <div class="speaker__meta">
-
-                      <h2>
-                        <a href="{{ speaker.url }}" title="{{ speaker.title }}">
-                          {{ speaker.title }}
-                        </a>
-                      </h2>
-
-                      <div class="socials">
-                          <ul>
-                              {% if speaker.twitter %}
-                              <li>twitter: <a href="https://www.twitter.com/{{ speaker.twitter }}" title="{{ speaker.name }} on Twitter" rel="noreferrer nofollow noopener" target="_blank">@{{ speaker.twitter }}</a></li>
-                              {% endif %}
-                              {% if speaker.website %}
-                              <li>website: <a href="{{ speaker.website }}" title="{{ speaker.name }} on the web" rel="noreferrer nofollow noopener" target="_blank">{{ speaker.website | replace:'https:','' | replace:'http:','' | replace:'/','' }}</a></li>
-                              {% endif %}
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      {% endfor %}
-  </div>
+                        <div class="speaker__links">
+                            <ul>
+                                {% if speaker.twitter %}
+                                    <li>
+                                        <a href="https://www.twitter.com/{{ speaker.twitter }}"
+                                           title="{{ speaker.name }} on Twitter" rel="noreferrer nofollow noopener"
+                                           target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                {% endif %}
+                                {% if speaker.website %}
+                                    <li>
+                                        <a href="{{ speaker.website }}" title="{{ speaker.name }} on the web"
+                                           rel="noreferrer nofollow noopener" target="_blank">
+                                            <i class="fa fa-globe-africa"></i>
+                                        </a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>

@@ -27,6 +27,3 @@ At MediaCT we’ve worked for years to resolve these issues. After years in the 
 
 ## {{ page.name }}
 A Scrum Master and Agile Coach who still develops software. Create higher value, foster creativity, have more fun. Scrum Master (PSM II) and agilist with a 15 year track record in software development, online marketing and interface design, as both software developer and coach. This gives me a creative, big-picture view on challenges posed. I love a good laugh.
-
-- twitter: [{{ page.twitter }}](https://twitter.com/{{ page.twitter }})
-- website: [www.vssr.nl](https://www.vssr.nl/)

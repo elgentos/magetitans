@@ -28,6 +28,3 @@ Magento plans on Page Builder and PWA.
 I started working with Magento 1 at 2009 as system integrator. I worked on different projects and customizations. In 2015 I joined Magento. At Magento I worked on page caching, dependency injection framework, date time API, persistence layer, content staging and security improvements. Currently I work as architect on Page Builder, new Magento CMS.
 
 I like to talk and share knowledge about programming, architecture and Magento.
-
-- twitter: [{{ page.twitter }}](https://twitter.com/{{ page.twitter }})
-- website: [www.magento.com](https://www.magento.com/)

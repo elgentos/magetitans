@@ -19,68 +19,21 @@ permalink: /sponsors/
                 We are very proud of our sponsors and their commitment to this event.
             </p>
 
-<!--
-            <div class="headliner">
-                <h3>Headliner</h3>
-                <div class="row">
-                    <div class="col-md-2">
-                        <a href="https://www.buckaroo.nl/" target="_blank" title="Buckaroo"><img src="{{ "/assets/images/logos/elgentos.svg" | absolute_url }}"></a>
-                    </div>
+            {% for group in site.data.sponsors.groups %}
+                <div class="sponsors__grid sponsors__{{group.name}}">
+                    <h3>{{ group.title }}</h3>
+                    <ul class="sponsors">
+                        {% for item in group.sponsors %}
+                        <li class="sponsor">
+                            <a href="{{ item.link }}" title="{{ item.name }}">
+                                <img src="/assets/images/sponsors/{{ item.logo }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
-            </div>
+            {% endfor %}
 
-            <div class="event">
-                <h3>Event partners</h3>
-                <div class="row">
-                    <div class="col-md-2">
-                        <a href="https://elgentos.nl" target="_blank" title="elgentos ecommerce solutions"><img src="{{ "/assets/images/logos/elgentos.svg" | absolute_url }}"></a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="https://mediact.nl" target="_blank" title="MediaCT"><img src="{{ "/assets/images/logos/mediact.svg" | absolute_url }}"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gold">
-
-                <h3>Gold sponsors</h3>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <a href="https://www.buckaroo.nl/" target="_blank" title="Buckaroo"><img src="{{ "/assets/images/logos/elgentos.svg" | absolute_url }}"></a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="https://www.youwe.nl/" target="_blank" title="Youwe"><img src="{{ "/assets/images/logos/mediact.svg" | absolute_url }}"></a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="https://www.netz98.de/" target="_blank" title="Netz98"><img src="{{ "/assets/images/logos/mediact.svg" | absolute_url }}"></a>
-                        </div>
-                    </div>
-                </div>
-
-            <div class="silver">
-                <h3>Silver sponsors</h3>
-                <div class="row">
-                    <div class="col-md-2">
-                        <a href="https://www.buckaroo.nl/" target="_blank" title="Buckaroo"><img src="{{ "/assets/images/logos/elgentos.svg" | absolute_url }}"></a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="https://www.byte.nl/" target="_blank" title="Byte"><img src="{{ "/assets/images/logos/elgentos.svg" | absolute_url }}"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bronze">
-                <h3>Bronze sponsors</h3>
-                <div class="row">
-                    <div class="col-md-2">
-                        <a href="https://www.youwe.nl/" target="_blank" title="Youwe"><img src="{{ "/assets/images/logos/mediact.svg" | absolute_url }}"></a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="https://www.netz98.de/" target="_blank" title="Netz98"><img src="{{ "/assets/images/logos/mediact.svg" | absolute_url }}"></a>
-                    </div>
-                </div>
-            </div>
--->
             <h2>Get Involved</h2>
             <p>
                 Mage Titans is a partnership among the Magento developer community.

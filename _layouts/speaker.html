@@ -11,9 +11,38 @@ layout: default
     </div>
 </div>
 
-<div class="container">
+<div class="container speaker-page">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-3">
+            <div class="speaker__avatar">
+                <img src="/assets/images/speakers/{{ page.img }}" alt="{{ page.name }}"/>
+            </div>
+            <div class="speaker__name">
+                <h3>{{ page.name }}</h3>
+            </div>
+            <div class="speaker__links">
+                <ul>
+                    {% if page.twitter %}
+                    <li>
+                        <a href="https://www.twitter.com/{{ page.twitter }}"
+                           title="{{ page.name }} on Twitter" rel="noreferrer nofollow noopener"
+                           target="_blank">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if page.website %}
+                    <li>
+                        <a href="{{ page.website }}" title="{{ page.name }} on the web"
+                           rel="noreferrer nofollow noopener" target="_blank">
+                            <i class="fa fa-globe-africa"></i> Website
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
             {{ content }}
         </div>
     </div>
