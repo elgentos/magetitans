@@ -14,5 +14,3 @@ The world of technology evolves constantly. Every day we as developers do not le
 ## {{ page.name }}
 Between having a family life, doing a weekly radio show and attending conferences and usergroup meetings, Stefan tries running a company called Ingewikkeld and organizing WeCamp. Having worked with PHP and several of its open source products since the late 90s, he still likes it for getting the job done.
 
-- twitter: [{{ page.twitter }}](https://twitter.com/{{ page.twitter }})
-- website: [weblog.stefankoopmanschap.nl](http://weblog.stefankoopmanschap.nl/)

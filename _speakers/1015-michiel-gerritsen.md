@@ -24,6 +24,3 @@ It gives you a great flexibility over managing your cronjobs.
 
 ## {{ page.name }}
 Hi, i’m Michiel. I am working in the e-commerce industry for over 10 years as a developer. When i started i worked with small retailers. After working for different agencies i am now working as freelancer for companies with millions and millions of revenue. I loved tested code that looks great and works even better.
-
-- twitter: [{{ page.twitter }}](https://twitter.com/{{ page.twitter }})
-- website: [www.michiel-gerritsen.com](http://www.michiel-gerritsen.com/)

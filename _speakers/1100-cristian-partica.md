@@ -13,6 +13,3 @@ GraphQL is the foundation for creating new-age headless Magento installations, c
 
 ## {{ page.name }}
 Cristian is a Magento software engineer for more than 3 years and he lives in Austin, TX. He has 12 years of experience in web development, working with PHP and LAMP stacks, mainly in open-source projects. Cristian is a multi-national work and travel person. He worked full time jobs in countries like Spain, Mexico, Argentina and USA country and he would love to talk about recent development in Magento and the future of graphql in ecommerce.
-
-- twitter: [{{ page.twitter }}](https://twitter.com/{{ page.twitter }})
-- website: [www.magento.com](https://www.magento.com/)

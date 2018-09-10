@@ -28,6 +28,3 @@ In his free time the biggest interest is Metal music and [Archlinux](https://www
 If you want to find more of Ike’s hobby projects, check out his [github](https://github.com/BlackIkeEagle).
 
 Maybe you want to be annoyed with some random thoughts spit out on twitter @BlackIkeEagle
-
-- twitter: [{{ page.twitter }}](https://twitter.com/{{ page.twitter }})
-- website: [herecura.eu](https://herecura.eu/)

@@ -12,6 +12,3 @@ website: https://www.fisheye-webdesign.co.uk/
 
 
 ## {{ page.name }}
-
-- twitter: [{{ page.twitter }}](https://twitter.com/{{ page.twitter }})
-- website: [www.fisheye-webdesign.co.uk](https://www.fisheye-webdesign.co.uk/)

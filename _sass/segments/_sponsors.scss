@@ -1,0 +1,36 @@
+.sponsors__grid {
+  h3 {
+    text-align: center;
+  }
+
+  ul.sponsors {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    li.sponsor {
+      display: block;
+      margin: 10px;
+
+      a {
+        display: block;
+
+        img {
+          max-width: 175px;
+          width: 175px;
+          height: auto;
+
+          @media (max-width: $screen-sm-min) {
+            max-width: 150px;
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}

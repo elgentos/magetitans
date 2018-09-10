@@ -1,5 +1,12 @@
+// Import external resources
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+// Import customisations
+$fa-font-path: "/assets/fonts/font-awesome/";
+
 @import "variables";
 @import "bootstrap";
+@import "font-awesome";
 @import "custom";
 @import "segments/speakers";
+@import "segments/sponsors";
