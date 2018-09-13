@@ -14,6 +14,15 @@ groups:
       - name: Netz98 GmbH
         link: https://www.netz98.de/
         logo: netz98.svg
+  - title: Friends of MageTitans
+    name: friends
+    sponsors:
+    - name: Byte
+      link: https://www.byte.nl/
+      logo: byte.svg
+    - name: Inchoo
+      link: https://inchoo.net/
+      logo: inchoo.svg
   - title: Organisation
     name: organisation
     sponsors:
