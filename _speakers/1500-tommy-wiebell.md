@@ -1,10 +1,9 @@
 ---
 layout:  speaker
 title:  "Magento Page Builder"
-name: Igor Melnikov
-permalink: /speakers/igor-melnikov/
-img: igor_melnikov.jpg
-twitter: igor_melnikov
+name: Tommy Wiebell
+permalink: /speakers/tommy-wiebell/
+img: tommy-wiebell.jpg
 website: https://www.magento.com/
 ---
 
@@ -25,6 +24,7 @@ Overview of sample extensions developers can refer to when building their extens
 Magento plans on Page Builder and PWA.
 
 ## {{ page.name }}
-I started working with Magento 1 at 2009 as system integrator. I worked on different projects and customizations. In 2015 I joined Magento. At Magento I worked on page caching, dependency injection framework, date time API, persistence layer, content staging and security improvements. Currently I work as architect on Page Builder, new Magento CMS.
-
-I like to talk and share knowledge about programming, architecture and Magento.
+I’m a Magento Full-Stack Engineer coming up on two years and reside in Austin, TX; the music capital of the world. My 
+background has always revolved around PHP, with my first six years in the industry working with another open source CRM 
+platform, SugarCRM. In my free time, I enjoy playing Skeeball competitively, throwing disc golf, and trying to keep up 
+with my toddler.
