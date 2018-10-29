@@ -30,7 +30,6 @@ font-awesome:
 
 gems:
   - jekyll-feed
-  - jekyll-font-awesome-sass
 exclude:
   - Gemfile
   - Gemfile.lock
