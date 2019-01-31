@@ -1,7 +1,6 @@
 var $j = jQuery.noConflict();
 
 $j(document).ready(function () {
-
     /* TODO: Install enquire */
     enquire.register("screen and (max-width: 769px)", {
         match: function () {

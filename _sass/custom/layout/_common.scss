@@ -1,0 +1,10 @@
+p {
+    font-weight: $font-weight-light;
+}
+
+body:not(.home) {
+    .navbar {
+        @extend .sticky-top;
+        @extend .bg-dark;
+    }
+}

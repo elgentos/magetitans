@@ -1,14 +1,18 @@
 var $j = jQuery.noConflict();
 
 $j(document).ready(function () {
+	// if (window.location.protocol === 'https:') {
+	// 	return;
+	// }
+	// window.location = window.location.href.replace(/^http:/, 'https:');
 
-	// $j('.navbar-toggle').on('click', function() {
-	// 	$j(this).toggleClass('open');
-	// });
+    $j(window).scroll(function() {
+        let navbar = $j('.navbar')[0];
 
-	if (window.location.protocol === 'https:') {
-		return;
-	}
-	window.location = window.location.href.replace(/^http:/, 'https:');
-
+        if ($j(window).scrollTop() >= ($j(navbar).height() / 2)) {
+            $j('body').addClass('fixed');
+        } else {
+            $j('body').removeClass('fixed');
+        }
+    });
 });
