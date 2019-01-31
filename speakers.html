@@ -6,52 +6,50 @@ permalink: /speakers/
 
 <div class="container mb-5">
     <div class="row">
-        <ul class="speakers">
-            {% for speaker in site.speakers %}
-            <li class="speaker">
-                <div class="speaker__img-name">
-                    <a href="{{ speaker.url }}">
-                        {% if speaker.img %}
-                        <div class="speaker__avatar">
-                            <img src="/assets/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}"/>
-                        </div>
-                        {% endif %}
-                        <div class="speaker__name">
-                            <h2>{{ speaker.name }}</h2>
-                        </div>
-                    </a>
-                </div>
+        <div class="col-md-12">
+            <div class="row">
+                {% for speaker in site.speakers %}
+                    <div class="col-md-3 py-3">
+                        <div class="card h-100">
+                            {% if speaker.img %}
+                                <a href="{{ speaker.url }}">
+                                    <img class="card-img-top" src="/assets/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}"/>
+                                </a>
+                            {% endif %}
+                            <div class="card-body">
+                                <h3 class="card-title h5">
+                                    <a href="{{ speaker.url }}">{{ speaker.name }}</a>
+                                </h3>
+                                <p class="card-text">
+                                    <a href="{{ speaker.url }}">{{ speaker.title }}</a>
+                                </p>
 
-                    <div class="speaker__meta">
-                        <span title="{{ speaker.title }}">
-                            <a href="{{ speaker.url }}">{{ speaker.title }}</a>
-                        </span>
-
-                        <div class="speaker__links">
-                            <ul>
-                                {% if speaker.twitter %}
-                                    <li>
-                                        <a href="https://www.twitter.com/{{ speaker.twitter }}"
-                                           title="{{ speaker.name }} on Twitter" rel="noreferrer nofollow noopener"
-                                           target="_blank">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
+                                {% if speaker.twitter or speaker.website %}
+                                    <ul class="list-inline">
+                                        {% if speaker.twitter %}
+                                        <li class="list-inline-item">
+                                            <a href="https://www.twitter.com/{{ speaker.twitter }}"
+                                               title="{{ speaker.name }} on Twitter" rel="noreferrer nofollow noopener"
+                                               target="_blank">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        {% endif %}
+                                        {% if speaker.website %}
+                                        <li class="list-inline-item">
+                                            <a href="{{ speaker.website }}" title="{{ speaker.name }} on the web"
+                                               rel="noreferrer nofollow noopener" target="_blank">
+                                                <i class="fa fa-globe-africa"></i>
+                                            </a>
+                                        </li>
+                                        {% endif %}
+                                    </ul>
                                 {% endif %}
-                                {% if speaker.website %}
-                                    <li>
-                                        <a href="{{ speaker.website }}" title="{{ speaker.name }} on the web"
-                                           rel="noreferrer nofollow noopener" target="_blank">
-                                            <i class="fa fa-globe-africa"></i>
-                                        </a>
-                                    </li>
-                                {% endif %}
-                            </ul>
+                            </div>
                         </div>
                     </div>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
