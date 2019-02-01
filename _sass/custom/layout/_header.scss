@@ -2,6 +2,7 @@
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
+    background: rgba(0, 0, 0, .75) !important;
 
     .navbar-nav > li > a {
         padding: 2.2509764em 15px;
@@ -15,10 +16,6 @@
 
     .navbar-brand {
         color: $white;
-    }
-
-    body.fixed & {
-        background: rgba(0, 0, 0, .75) !important;
     }
 }
 
