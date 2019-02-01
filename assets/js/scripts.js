@@ -6,9 +6,7 @@ $j(document).ready(function () {
     }
     window.location = window.location.href.replace(/^http:/, 'https:');
 
-    $j(window).scroll(function(){
-        console.log('.');
-
+    $j(window).on('scroll', function(){
         if ($j(window).scrollTop() >= ($j('#navbar').height() / 2)) {
             $j('body').addClass('fixed');
         } else {
