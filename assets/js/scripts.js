@@ -7,18 +7,12 @@ $j(document).ready(function () {
 	window.location = window.location.href.replace(/^http:/, 'https:');
 
     $j(window).scroll(function(){
-        fixedHeader();
+        let navbar = $j('.navbar')[0];
+
+        if ($j(window).scrollTop() >= ($j(navbar).height() / 2)) {
+            $j('body').addClass('fixed');
+        } else {
+            $j('body').removeClass('fixed');
+        }
     });
-
-    fixedHeader();
 });
-
-function fixedHeader() {
-    let navbar = $j('.navbar')[0];
-
-    if ($j(window).scrollTop() >= ($j(navbar).height() / 2)) {
-        $j('body').addClass('fixed');
-    } else {
-        $j('body').removeClass('fixed');
-    }
-}
