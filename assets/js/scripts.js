@@ -6,7 +6,9 @@ $j(document).ready(function () {
 	}
 	window.location = window.location.href.replace(/^http:/, 'https:');
 
-    $j(window).scroll(fixedHeader());
+    $j(window).scroll(function(){
+        fixedHeader();
+    });
 
     fixedHeader();
 });

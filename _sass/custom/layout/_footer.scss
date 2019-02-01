@@ -19,12 +19,37 @@
 }
 
 .page-footer {
-    padding: 30px 0;
     background: $gray-800;
     color: $white;
     font-weight: $font-weight-light;
 
     a {
         color: $white;
+    }
+}
+
+/* ----------------------------------------
+ * Mobile
+ * ---------------------------------------- */
+
+@media (max-width: map-get($grid-breakpoints, 'sm')) {
+    .page-footer-before {
+        .newsletter-container {
+            .h4 {
+                margin-bottom: 1rem !important;
+            }
+
+            input.form-control {
+                border-top-right-radius: $btn-border-radius;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+            .actions .btn {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: $btn-border-radius;
+                width: 100%;
+            }
+        }
     }
 }
