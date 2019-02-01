@@ -1,14 +1,24 @@
 var $j = jQuery.noConflict();
 
 $j(document).ready(function () {
-
-	// $j('.navbar-toggle').on('click', function() {
-	// 	$j(this).toggleClass('open');
-	// });
-
 	if (window.location.protocol === 'https:') {
-		return;
+	    return;
 	}
 	window.location = window.location.href.replace(/^http:/, 'https:');
 
+    $j(window).scroll(function(){
+        fixedHeader();
+    });
+
+    fixedHeader();
 });
+
+function fixedHeader() {
+    let navbar = $j('.navbar')[0];
+
+    if ($j(window).scrollTop() >= ($j(navbar).height() / 2)) {
+        $j('body').addClass('fixed');
+    } else {
+        $j('body').removeClass('fixed');
+    }
+}

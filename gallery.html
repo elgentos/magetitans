@@ -1,0 +1,23 @@
+---
+layout: default
+title: Gallery
+permalink: /gallery.html
+---
+
+<div class="container mb-5">
+    {% for gallery in site.data.gallery.items %}
+    <div class="row">
+        <div class="col-md-12">
+            <h2>{{ gallery.title }}</h2>
+            <p>{{ gallery.description }}</p>
+            <div class="row">
+                {% for image in gallery.images %}
+                <div class="col-md-4 col-sm-4">
+                    <img src="/assets/images/galleries/{{ gallery.subfolder }}/{{ image }}" alt="" class="img-fluid img-thumbnail"/>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
