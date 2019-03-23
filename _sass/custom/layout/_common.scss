@@ -8,3 +8,7 @@ body:not(.home) {
         @extend .bg-dark;
     }
 }
+
+img {
+    max-width: 100%;
+}

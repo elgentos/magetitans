@@ -7,6 +7,34 @@ permalink: /sponsors/
 <div class="container mb-5">
     <div class="row">
         <div class="col-md-12">
+            <p class="text-center">
+                We are very proud of our sponsors and their commitment to this event.
+            </p>
+
+            {% for group in site.data.sponsors.groups %}
+                {% if group.sponsors %}
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 sponsors__grid mb-3">
+                                <h3>{{ group.title }}</h3>
+                                <ul class="sponsors {{ group.name }}">
+                                    {% for item in group.sponsors %}
+                                    <li class="sponsor">
+                                        <a href="{{ item.link }}" title="{{ item.name }}">
+                                            <img src="/assets/images/sponsors/{{ item.logo }}" alt="{{ item.name }}" title="{{ item.name }}" />
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
             <h2>Get Involved</h2>
             <p>
                 Mage Titans is a partnership among the Magento developer community.

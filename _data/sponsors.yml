@@ -1,28 +1,28 @@
 groups:
+  - title: Headline Sponsor
+    name: headline
+  - title: Gold Sponsors
+    name: gold
+    sponsors:
+      - name: Hypernode by Byte
+        link: https://www.hypernode.com/
+        logo: byte.svg
   - title: Silver Sponsors
     name: silver
     sponsors:
-      - name: Buckaroo BV
-        link: https://www.buckaroo.com/
-        logo: buckaroo.svg
-  - title: Bronse Sponsors
-    name: bronse
-    sponsors:
-      - name: YouWe BV
-        link: https://www.youwe.nl/
-        logo: youwe.svg
       - name: Netz98 GmbH
         link: https://www.netz98.de/
         logo: netz98.svg
+  - title: Bronze Sponsor
+    name: bronze
   - title: Friends of MageTitans
     name: friends
-    sponsors:
-    - name: Byte
-      link: https://www.byte.nl/
-      logo: byte.svg
-    - name: Inchoo
-      link: https://inchoo.net/
-      logo: inchoo.svg
+  - title: After Party
+    name: afterparty
+#    sponsors:
+#    - name: Deity
+#      link: https://www.deity.io/
+#      logo: deity.svg
   - title: Organisation
     name: organisation
     sponsors:
