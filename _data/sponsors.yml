@@ -19,10 +19,10 @@ groups:
     name: friends
   - title: After Party
     name: afterparty
-#    sponsors:
-#    - name: Deity
-#      link: https://www.deity.io/
-#      logo: deity.svg
+    sponsors:
+    - name: Deity
+      link: https://www.deity.io/
+      logo: deity.svg
   - title: Organisation
     name: organisation
     sponsors:
