@@ -15,6 +15,10 @@ groups:
         logo: netz98.svg
   - title: Bronze Sponsor
     name: bronze
+    sponsors:
+      - name: GitLabHost
+        link: https://gitlabhost.com/
+        logo: gitlabhost.svg
   - title: Friends of MageTitans
     name: friends
   - title: After Party
