@@ -3,14 +3,13 @@ layout: default
 title: Speakers
 permalink: /speakers/
 ---
-{% if site.speakers.blank? %}
 <div class="container mb-5">
     <div class="row">
         <div class="col-md-12">
             <div class="row">
                 {% for speaker in site.speakers %}
-                    <div class="col-md-3 py-3">
-                        <div class="card h-100">
+                    <div class="col-md-3 col-sm-6 py-3">
+                        <div class="card h-100 border-0">
                             {% if speaker.img %}
                                 <a href="{{ speaker.url }}">
                                     <img class="card-img-top" src="/assets/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}"/>
@@ -21,7 +20,7 @@ permalink: /speakers/
                                     <a href="{{ speaker.url }}">{{ speaker.name }}</a>
                                 </h3>
                                 <p class="card-text">
-                                    <a href="{{ speaker.url }}">{{ speaker.title }}</a>
+                                    <a href="{{ speaker.url }}" class="text-body">{{ speaker.title }}</a>
                                 </p>
 
                                 {% if speaker.twitter or speaker.website %}
@@ -53,7 +52,7 @@ permalink: /speakers/
         </div>
     </div>
 </div>
-{% else %}
+
 <div class="container mb-5">
     <div class="row">
         <div class="col-md-12">
@@ -68,4 +67,3 @@ permalink: /speakers/
         </div>
     </div>
 </div>
-{% endif %}
