@@ -1,6 +1,6 @@
 ---
 layout: speaker
-title: Varnish in Magento 2
+title: Building a React checkout for M2
 name: Willem Wigman
 permalink: /speakers/willem-wigman/
 img: willem-wigman.jpg
@@ -9,14 +9,29 @@ website: https://www.integer-net.com/
 ---
 
 ## {{ page.title }}
-A short insight into how Varnish caching and invalidation works, and how it can be improved.
+How we built a React checkout for Magento 2, replacing the knockout version, while using the default M2 API. A technical 
+dive into the API and developing in React to prepare for PWA.
 
-A topic that is not written/talked about a lot: how is varnish cache built, how is it invalidated, how can it be 
-improved and how can you debug it?
+At Integer_net we needed to rebuild a checkout for a client that was moving from a custom built shop to Magento 2 
+Commerce. The goal was to keep the functionalities and visual presentation of the checkout identical to the old shop. 
+Since the default Magento 2 checkout is almost impossible to heavily customise we opted for the option to build it from 
+scratch, using React and the default M2 API.
 
-Examples: 
-- adding entities to varnish cache-tags, like widgets 
-- making varnish purge-requests async and greatly improve import- and indexing speed
+This presentation would be a technical dive into the process and used techniques.
+
+The talk could include: - How we unravelled the API endpoint/payloads/responses with Postman. - How we implemented 
+several React apps into the current Magento 2 frontend - How we built the 4-step checkout, including Payment provider 
+with React. - The isolation/"headlessness" of the React app that enables us to move the checkout to a PWA solution in 
+the future
+
+A very timely presentation that shows how you can harness the power of React and learn all techniques that will be 
+required for PWA in the future, while using the current Magento 2 frontend. (basically replacing knockout/ui 
+components).
+
+The project is currently live under https://www.navabi.at/ and will soon be at .de as well, followed by launches in all 
+other active countries.
+
+React is used on the product pages, customer account (order history fetched remote) and checkout.
 
 ## {{ page.name }}
 Willem has 8+ years of experience in building Magento webshops. Ran an e-commerce agency for 4 years and is now working 
