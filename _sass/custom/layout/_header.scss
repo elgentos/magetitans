@@ -25,3 +25,9 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 767px) {
+    .navbar .navbar-nav > li > a {
+        padding: .5rem 15px;
+    }
+}
