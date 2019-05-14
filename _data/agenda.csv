@@ -1,15 +1,15 @@
 start,end,type,speaker,title,url
 08:30,09:00,social,,Welcome,
 09:00,09:15,talk,,Opening,
-09:15,10:00,talk,Stefan Koopmanschap,Don’t Stop Learning,/speakers/stefan-koopmanschap/
+09:15,10:00,talk,Jisse Reitsma,How can we enforce better Magento extensions?,/speakers/jisse-reitsma/
 10:00,10:15,social,,Coffee,
-10:15,11:00,talk,Michiel Gerritsen,Cron on Steriods,/speakers/michiel-gerritsen/
-11:00,11:45,talk,Cristian Partica,GraphQL: Mind your Ps and QLs,/speakers/cristian-partica/
+10:15,11:00,talk,Ivan Chepurnyi,Building cluster application in pure PHP for Magento 2,/speakers/ivan-chepurnyi/
+11:00,11:45,talk,Erwin Hofman,Improved performance for everyone,/speakers/erwin-hofman/
 11:45,12:30,social,,Lunch,
-12:30,13:15,talk,Rieks Visser,The Agile Agency - launching a Magento MVP in 1 sprint,/speakers/rieks-visser/
-13:15,14:00,talk,Ike Devolder,Run Magento 2 on Docker swarm,/speakers/ike-devolder/
+12:30,13:15,talk,Lightning Talks,David Lambauer - I Don't Write Documentation & Jeroen Vermeulen - Your webshop is secure, right? The safe webshop checklist,/speakers/david-lambauer/
+13:15,14:00,talk,Sergii Gozhedrianov,How to do continuous integration when chopping off Magento's head?,/speakers/sergii-gozhedrianov/
 14:00,14:15,social,,Coffee,
-14:15,15:00,talk,John Hughes,Stop flushing the fing cache,/speakers/john-hughes/
-15:00,15:45,talk,Tommy Wiebell,Magento Page Builder,/speakers/tommy-wiebell/
+14:15,15:00,talk,Willem Wigman,Building a React checkout for M2,/speakers/willem-wigman/
+15:00,15:45,talk,Michiel Gerritsen,Getting started with testing in Magento 2,/speakers/michiel-gerritsen/
 15:45,16:00,talk,,Closing remarks,
 16:00,18:00,social,,Open bar,
