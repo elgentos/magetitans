@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="container speaker-page">
-    <div class="row">
+    <div class="row mb-5">
         <div class="col-md-3">
             <div class="speaker__avatar">
                 <img src="/assets/images/speakers/{{ page.img }}" alt="{{ page.name }}"/>
@@ -12,9 +12,9 @@ layout: default
                 <h3>{{ page.name }}</h3>
             </div>
             <div class="speaker__links">
-                <ul>
+                <ul class="list-group">
                     {% if page.twitter %}
-                    <li>
+                    <li class="list-group-item border-0 px-0 py-1">
                         <a href="https://www.twitter.com/{{ page.twitter }}"
                            title="{{ page.name }} on Twitter" rel="noreferrer nofollow noopener"
                            target="_blank">
@@ -23,7 +23,7 @@ layout: default
                     </li>
                     {% endif %}
                     {% if page.website %}
-                    <li>
+                    <li class="list-group-item border-0 px-0 py-1">
                         <a href="{{ page.website }}" title="{{ page.name }} on the web"
                            rel="noreferrer nofollow noopener" target="_blank">
                             <i class="fa fa-globe-africa"></i> Website
