@@ -31,7 +31,7 @@ markdown: kramdown
 font-awesome:
   assets: true
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-font-awesome-sass
 exclude:
