@@ -2,13 +2,6 @@
     font-weight: $font-weight-normal;
 }
 
-body:not(.home) {
-    .navbar {
-        @extend .sticky-top;
-        @extend .bg-dark;
-    }
-}
-
 img {
     max-width: 100%;
 }
