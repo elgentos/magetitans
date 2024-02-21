@@ -1,13 +1,16 @@
 .navbar {
-    -webkit-transition: background-color 500ms linear;
-    -ms-transition: background-color 500ms linear;
-    transition: background-color 500ms linear;
-    background: rgba(0, 0, 0, .75) !important;
+    padding: 0.5rem 0;
+    background-color: black;
+    top: 0;
+    position: sticky;
+    z-index: 100;
 
     .navbar-nav > li > a {
         padding: 2.2509764em 15px;
         line-height: 1.75;
         color: $white;
+        text-transform: uppercase;
+
 
         &:hover {
             color: $primary;
@@ -16,6 +19,11 @@
 
     .navbar-brand {
         color: $white;
+    }
+
+    .navbar-nav .nav-link {
+        color: rgba(255,255,255,1);
+
     }
 }
 
