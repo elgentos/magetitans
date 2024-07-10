@@ -1,7 +1,7 @@
 start,end,type,speaker,title,url
 8:30,0:30,social,,Welcome,
 9:00,0:15,talk,,Opening,
-9:15,0:35,talk,Nils Preuß,"Adobe Commerce to MageOs migration, what could possibly go wrong?",/speakers/nils-preus/
+9:15,0:35,talk,Nils Preuß,"Adobe Commerce to MageOs migration, what could possibly go wrong?",/speakers/nils-preuss/
 9:50,0:35,talk,Karlijn Löwik & Erwin Hofman, We Love LoAF (& INP),/speakers/karlijn-en-erwin/
 10:25,0:30,social,,Coffee,
 10:55,0:35,talk,Toon Van Dooren,Varnish xKey + Magento,/speakers/toon-van-dooren/
