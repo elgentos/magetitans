@@ -1,6 +1,10 @@
 .sponsors__grid {
+    margin-bottom: 6rem;
+
     h3 {
         text-align: center;
+        font-weight: 600;
+        color: #ee7402;
     }
 
     ul.sponsors {
@@ -33,11 +37,17 @@
             }
         }
 
-        &.headline,
-        &.gold {
+        &.headline {
             li.sponsor a img {
                 max-width: 320px;
                 width: 320px;
+            }
+        }
+
+        &.gold {
+            li.sponsor a img {
+                max-width: 240px;
+                width: 240px;
             }
         }
     }
