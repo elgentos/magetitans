@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: speaker-layout
 ---
 
 <div class="container speaker-page">
@@ -13,12 +13,12 @@ layout: default
             </div>
             <div class="speaker__links">
                 <ul class="list-group">
-                    {% if page.twitter %}
+                    {% if page.linkedin %}
                     <li class="list-group-item border-0 px-0 py-1">
-                        <a href="https://www.twitter.com/{{ page.twitter }}"
-                           title="{{ page.name }} on Twitter" rel="noreferrer nofollow noopener"
+                        <a href="{{ page.linkedin }}"
+                           title="{{ page.name }} on LinkedIn" rel="noreferrer nofollow noopener"
                            target="_blank">
-                            <i class="fab fa-twitter"></i> Twitter
+                            <i class="fab fa-linkedin"></i> LinkedIn
                         </a>
                     </li>
                     {% endif %}
