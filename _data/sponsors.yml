@@ -1,38 +1,61 @@
 groups:
   - title: Headline Sponsor
     name: headline
+    sponsors:
+      - name: Mollie
+        link: https://www.mollie.com/
+        logo: mollie.svg
   - title: Gold Sponsors
     name: gold
     sponsors:
-      - name: Hypernode by Byte
+      - name: Hypernode
         link: https://www.hypernode.com/
-        logo: byte.svg
-  - title: Silver Sponsors
+        logo: hypernode.svg
+      - name: Hyva
+        link: https://www.hyva.io/
+        logo: hyva.svg
+  - title: Silver+ Sponsors
     name: silver
     sponsors:
-      - name: Netz98 GmbH
-        link: https://www.netz98.de/
-        logo: netz98.svg
-  - title: Bronze Sponsor
+      - name: Skwirrel
+        link: https://www.skwirrel.nl/
+        logo: skwirrel.svg
+      - name: MultiSafePay
+        link: https://www.MultiSafePay.com/
+        logo: msp.svg
+  - title: Bronze Sponsors
     name: bronze
     sponsors:
       - name: GitLabHost
         link: https://gitlabhost.com/
         logo: gitlabhost.svg
-  - title: Friends of MageTitans
-    name: friends
+      - name: M.academy
+        link: https://M.academy/
+        logo: macademy.svg
+      - name: Vendic
+        link: https://vendic.nl/
+        logo: vendic.svg
+      - name: Tweakwise
+        link: https://tweakwise.nl/
+        logo: tweakwise.svg
   - title: After Party
     name: afterparty
     sponsors:
-    - name: Deity
-      link: https://www.deity.io/
-      logo: deity.svg
+    - name: RUMVision
+      link: https://www.rumvision.com
+      logo: rumvision.svg
+    - name: xCore
+      link: https://www.xcore.nl/
+      logo: xcore.svg
+  - title: Organisation Material Sponsor
+    name: material
+    sponsors:
+      - name: Instant Design Tool
+        link: https://www.instantdesigntool.com/
+        logo: instantdesigntool.svg
   - title: Organisation
     name: organisation
     sponsors:
       - name: elgentos
         link: https://elgentos.nl/
         logo: elgentos.svg
-      - name: MediaCT
-        link: https://www.mediact.nl/
-        logo: mediact.svg

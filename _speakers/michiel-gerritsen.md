@@ -20,4 +20,3 @@ point can be bumpy. I hope to give you a head start and improve your code.
 Hi, I’m Michiel. I am working in the e-commerce industry for over 10 years as a developer. When I started I worked with 
 small retailers. After working for different agencies I am now working as a freelancer for companies with millions and 
 millions of revenue. I loved tested code that looks great and works even better.
-
