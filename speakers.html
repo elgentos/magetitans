@@ -3,16 +3,16 @@ layout: default
 title: Speakers
 permalink: /speakers/
 ---
-<div class="container mb-5">
+<div class="container mb-5 speakers">
     <div class="row">
         <div class="col-md-12">
-           <!-- <div class="row">
+           <div class="row">
                 {% for speaker in site.speakers %}
                     <div class="col-md-3 col-sm-6 py-3">
                         <div class="card h-100 border-0">
                             {% if speaker.img %}
                                 <a href="{{ speaker.url }}">
-                                    <img class="card-img-top" src="/assets/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}"/>
+                                    <img class="card-img-top" src="/assets/images/speakers/placeholder.jpg" alt="{{ speaker.name }}"/>
                                 </a>
                             {% endif %}
                             <div class="card-body">
@@ -25,12 +25,12 @@ permalink: /speakers/
 
                                 {% if speaker.twitter or speaker.website %}
                                     <ul class="list-inline">
-                                        {% if speaker.twitter %}
+                                        {% if speaker.linkedin %}
                                         <li class="list-inline-item">
-                                            <a href="https://www.twitter.com/{{ speaker.twitter }}"
+                                            <a href="{{ speaker.linkedin }}"
                                                title="{{ speaker.name }} on Twitter" rel="noreferrer nofollow noopener"
                                                target="_blank">
-                                                <i class="fab fa-twitter"></i>
+                                                <i class="fab fa-linkedin"></i>
                                             </a>
                                         </li>
                                         {% endif %}
@@ -48,11 +48,12 @@ permalink: /speakers/
                         </div>
                     </div>
                 {% endfor %}
-            </div>-->
+            </div>
         </div>
     </div>
 </div>
 
+<!--
 <div class="container mb-5">
     <div class="row">
         <div class="col-md-12">
@@ -67,3 +68,4 @@ permalink: /speakers/
         </div>
     </div>
 </div>
+-->
