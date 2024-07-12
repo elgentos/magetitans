@@ -20,6 +20,12 @@ groups:
       - name: Skwirrel
         link: https://www.skwirrel.eu/
         logo: skwirrel.svg
+  - title: Silver Sponsor
+    name: silver
+    sponsors:
+      - name: MultiSafepay
+        link: https://www.multisafepay.eu/
+        logo: multisafepay.svg
   - title: Bronze Sponsors
     name: bronze
     sponsors:

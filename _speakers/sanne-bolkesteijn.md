@@ -18,4 +18,4 @@ website: https://www.hyva.io/
 
 ## About {{ page.name }}
 
-<p></p>
+<p>Sanne has been working in the Magento ecosystem since 2014. She has extensive experience in commercial roles in amongst others hosting company Hypernode. She currently works as Commercial Director at Hyvä, growing the Hyvä partner network, defining commercial strategy and contributing to product development. She loves working at the intersection of technical innovation and commercial strategy. She is also a board member of Mage-OS Netherlands, and co-organizes Meet Magento Netherlands. This girl loves the Magento community and is passionate about diversity and inclusion!</p>
