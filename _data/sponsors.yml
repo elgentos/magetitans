@@ -38,9 +38,6 @@ groups:
       - name: Vendic
         link: https://vendic.nl/
         logo: vendic.svg
-      - name: Tweakwise
-        link: https://tweakwise.com/
-        logo: tweakwise.webp
   - title: After Party
     name: afterparty
     sponsors:
