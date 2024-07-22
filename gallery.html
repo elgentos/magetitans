@@ -2,11 +2,12 @@
 layout: default
 title: Gallery
 permalink: /gallery.html
+image: /assets/images/backgrounds/gallery.jpg
 ---
 
 <div class="container mb-5">
     {% for gallery in site.data.gallery.items %}
-    <div class="row">
+    <div class="row pb-5">
         <div class="col-md-12">
             <h2>{{ gallery.title }}</h2>
             <p>{{ gallery.description }}</p>

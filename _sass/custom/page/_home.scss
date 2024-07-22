@@ -1,11 +1,24 @@
 .home-banner {
-    background: url(/assets/images/homepage-header.jpg) 50% 50% no-repeat;
-    height: 100vh;
-    padding: 150px 0 60px;
+    background: url(/assets/images/homepage-header.jpg) no-repeat center center / cover;
+    height: 50vh; /* Change height to 50vh for 50% of the viewport height */
+    padding: 75px 0 30px; /* Adjust padding proportionally if needed */
+    position: relative; /* Ensure the banner is positioned relative for the overlay */
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Overlay with 50% opacity */
+    }
 
     .home-intro {
         background: rgba(0, 0, 0, .65);
         color: #fff;
         padding: 30px;
+        position: relative; /* Ensure the text content is above the overlay */
+        z-index: 1; /* Ensure the text content is above the overlay */
     }
 }
