@@ -9,3 +9,14 @@ img {
 h1.text-center {
     text-shadow: 3px 2px #1E1E1E;
 }
+
+.sender-form-field {
+    width: 100%;
+    margin: auto; padding: 10px;
+}
+
+@media screen and (min-width: 767px) {
+    .sender-form-field {
+        width: 50%;
+    }
+}
