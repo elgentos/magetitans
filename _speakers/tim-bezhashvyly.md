@@ -14,3 +14,4 @@ website: https://hiddenhint.ch/
 
 ## About {{ page.name }}
 
+Tim is a Magento veteran and the CTO of hidden hint, a Swiss-based company that has built a stellar reputation by delivering high-quality services to the largest online retailers in Europe and the United States, as well as governmental bodies in Switzerland.
