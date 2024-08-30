@@ -26,6 +26,9 @@ groups:
       - name: MultiSafepay
         link: https://www.multisafepay.eu/
         logo: multisafepay.svg
+      - name: Happy Horizon
+        link: https://happyhorizon.com/
+        logo: happy-horizon.png
   - title: Bronze Sponsors
     name: bronze
     sponsors:
