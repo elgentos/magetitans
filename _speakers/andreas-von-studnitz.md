@@ -5,7 +5,7 @@ name: Andreas von Studnitz
 permalink: /speakers/andreas-von-studnitz/
 img: andreas-von-studnitz.jpg
 linkedin: https://www.linkedin.com/in/andreasv1/
-website: https://www.integer-net.com/
+website: https://www.hyva.io/
 ---
 
 ## The talk: {{ page.title }}
@@ -16,4 +16,4 @@ website: https://www.integer-net.com/
 
 ## About {{ page.name }}
 
-<p>Andreas von Studnitz is a co-founder and consultant at integer_net, and at the same time a seasoned Magento Developer. His main areas of interest are backend development, consulting and giving developer trainings. He was appointed a Magento Master in 2019 and 2020. integer_net is a German Magento Agency and co-inventor of Hyvä. Andreas is a father of three and likes board games and video games, travelling, cycling, running and skiing.</p>
+<p>Andreas von Studnitz is an architect and senior Magento developer at Hyvä. He has only just started there, after 12 years as a co-founder, developer, consultant and long-time managing director at integer_net, a German Magento agency. His main areas of interest are backend development, consulting and giving developer trainings. He was appointed a Magento Master in 2019 and 2020. Andreas is a father of three and likes board games and video games, travelling, cycling, running and skiing.</p>
